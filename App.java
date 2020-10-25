@@ -1,10 +1,6 @@
-package net.javaguides.hibernate;
-
 import java.util.List;
-
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 import net.javaguides.hibernate.entity.Student;
 import net.java.hibernate.util.HibernateUtil;
 

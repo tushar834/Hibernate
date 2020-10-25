@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) {
 
         Student student = new Student("Tushar", "Chhabra", "Tushar.Chhabra@engineer.com");
-        Student student1 = new Student("John", "Cena", "John@Cena.com");
+        Student student1 = new Student("Yash", "Agrawal", "Yash.Agrawal@tc.com");
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             // start a transaction

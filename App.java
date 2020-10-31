@@ -1,14 +1,18 @@
 package net.javaguides.hibernate;
+
 import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+
 import net.javaguides.hibernate.entity.Student;
-import net.java.hibernate.util.HibernateUtil;
+import net.javaguides.hibernate.util.HibernateUtil;
 
 public class App {
     public static void main(String[] args) {
-        Student student1 = new Student("Yash", "Agrawal", "Yash.Agrawal@tc.com");
+
         Student student = new Student("Tushar", "Chhabra", "Tushar.Chhabra@engineer.com");
+        Student student1 = new Student("John", "Cena", "John@Cena.com");
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             // start a transaction
